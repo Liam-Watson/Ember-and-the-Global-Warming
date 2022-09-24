@@ -2,3 +2,5 @@ UserSettings
 Temp
 Logs
 .vscode
+*.meta
+*.DS_Store
