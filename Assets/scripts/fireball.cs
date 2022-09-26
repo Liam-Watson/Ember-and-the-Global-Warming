@@ -36,10 +36,12 @@ public class fireball : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag != "Player"){
+        Debug.Log(collision.gameObject.tag);
+        if(collision.gameObject.tag != "Player" && collision.gameObject.tag != "block"){
             Destroy(collision.gameObject);
             Destroy(gameObject);
-        }else{
+        }else if(collision.gameObject.tag == "block"){
+            Destroy(gameObject);
             // Physics2D.IgnoreCollision(Ember.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         }
         
