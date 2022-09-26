@@ -7,7 +7,7 @@ public class emberMovement : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private LayerMask blockLayerMask;
     private float emberSpeed = 15.0f;
-    private float jumpPower = 20.0f;
+    private float jumpPower = 10.0f;
     private BoxCollider2D boxCollider2d;
 
     private Rigidbody2D emberRB;

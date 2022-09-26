@@ -14,8 +14,6 @@ public class fireball : MonoBehaviour
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = Camera.main.nearClipPlane;
         worldPositionMouse = Camera.main.ScreenToWorldPoint(mousePos);
-        Debug.Log((worldPositionMouse.normalized) * speed - new Vector3(Ember.GetComponent<Rigidbody2D>().position.x,Ember.GetComponent<Rigidbody2D>().position.y, 0));
-        Debug.Log(Ember.GetComponent<Rigidbody2D>().position);
         rb = GetComponent<Rigidbody2D>();
         rb.AddForce((worldPositionMouse.normalized) * speed - new Vector3(Ember.GetComponent<Rigidbody2D>().position.x,Ember.GetComponent<Rigidbody2D>().position.y, 0), ForceMode2D.Impulse);
 

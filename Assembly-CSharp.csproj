@@ -40,6 +40,8 @@
      <Compile Include="Assets/scripts/attack.cs" />
      <Compile Include="Assets/scripts/emberParticleMovement.cs" />
      <Compile Include="Assets/scripts/fireball.cs" />
+     <Compile Include="Assets/scripts/heatWaveParticles.cs" />
+     <Compile Include="Assets/scripts/grasslander.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/liam/unity/2021.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
