@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class fireball : MonoBehaviour
 {
-    public float speed = 10;
+    public float speed = 20;
     private Rigidbody2D rb;
     private Vector3 worldPositionMouse;
     public GameObject Ember;
@@ -15,7 +15,11 @@ public class fireball : MonoBehaviour
         mousePos.z = Camera.main.nearClipPlane;
         worldPositionMouse = Camera.main.ScreenToWorldPoint(mousePos);
         rb = GetComponent<Rigidbody2D>();
-        rb.AddForce((worldPositionMouse.normalized) * speed - new Vector3(Ember.GetComponent<Rigidbody2D>().position.x,Ember.GetComponent<Rigidbody2D>().position.y, 0), ForceMode2D.Impulse);
+        Ember = GameObject.Find("Ember");
+        var ePosX = Ember.GetComponent<Rigidbody2D>().position.x;
+        var ePosY = Ember.GetComponent<Rigidbody2D>().position.y;
+        var ePos3D = new Vector3(ePosX, ePosY, 0); 
+        rb.AddForce(((worldPositionMouse - Camera.main.transform.position).normalized) * speed , ForceMode2D.Impulse);
 
     }
 
