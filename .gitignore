@@ -5,3 +5,4 @@ Logs
 *.meta
 *.DS_Store
 Library
+.history
