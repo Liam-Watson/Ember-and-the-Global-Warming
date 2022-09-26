@@ -2,7 +2,6 @@ UserSettings
 Temp
 Logs
 .vscode
-*.meta
 *.DS_Store
 Library
 .history
