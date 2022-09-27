@@ -49,6 +49,8 @@
      <Compile Include="Assets/scripts/Controllers/PlayerController.cs" />
      <Compile Include="Assets/scripts/Checks/Ground.cs" />
      <Compile Include="Assets/scripts/Controllers/Controller.cs" />
+     <Compile Include="Assets/scripts/fireman.cs" />
+     <Compile Include="Assets/scripts/woodworker.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/liam/unity/2021.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
