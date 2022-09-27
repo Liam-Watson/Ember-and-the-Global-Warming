@@ -2781,11 +2781,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &368572006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1255965233551953229, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
+  m_PrefabInstance: {fileID: 1255965233246976811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &368572010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1255965233551953217, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
   m_PrefabInstance: {fileID: 1255965233246976811}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &368572015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368572006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130c81b7cc83f6fea9040742b309e9a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxSpeed: 14.9
+  _maxAcceleration: 41.2
+  _maxAirAcceleration: 20
+--- !u!114 &368572016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368572006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2363cf8a8447ceaa81e8dc0bcc365fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpHeight: 23.7
+  _maxAirJumps: 0
+  _downwardMovementMultiplier: 5
+  _upwardMovementMultiplier: 3.95
+--- !u!114 &368572017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368572006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c85acf98facd62d69d43f28b5c4cad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: {fileID: 11400000, guid: a2f0169d1a5334361a29ad4439d91ece, type: 2}
+--- !u!114 &368572018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368572006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e37891868638f5016a1bb897ad256841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &576298470
 GameObject:
   m_ObjectHideFlags: 0
@@ -12935,7 +12996,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ember
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1255965233551953216, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
 --- !u!1001 &3897356167490897037
 PrefabInstance:
