@@ -201,7 +201,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 3.984375, y: 0.109375, z: 0}
+  m_ChunkCullingBounds: {x: 4, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -5717,8 +5717,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -321.05225, y: 210.733}
-  m_SizeDelta: {x: 346.8356, y: 37.871}
+  m_AnchoredPosition: {x: -345.13846, y: 228.35547}
+  m_SizeDelta: {x: 348.5587, y: 32.0275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &354153562
 MonoBehaviour:
