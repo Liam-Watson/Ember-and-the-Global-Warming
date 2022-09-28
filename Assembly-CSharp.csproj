@@ -52,6 +52,8 @@
      <Compile Include="Assets/scripts/attack.cs" />
      <Compile Include="Assets/scripts/woodworker.cs" />
      <Compile Include="Assets/Animate.cs" />
+     <Compile Include="Assets/scripts/emberHeat.cs" />
+     <Compile Include="Assets/scripts/EmberGeneral.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/liam/unity/2021.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
