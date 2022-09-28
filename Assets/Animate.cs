@@ -1,0 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Shinjingi{
+    public class Animate : MonoBehaviour
+    {
+        // Start is called before the first frame update
+
+        public Animator animator;
+
+        private Rigidbody2D _body;
+        void Start()
+        {
+            
+        }
+        private void Awake()
+            {
+                _body = GetComponent<Rigidbody2D>();
+            }
+
+        // Update is called once per frame
+        void Update()
+        {
+            
+        }
+        void FixedUpdate(){
+            animator.SetFloat("Speed", Mathf.Min(1, Mathf.Abs(_body.velocity.x/10)));
+            animator.SetFloat("X", _body.velocity.x);
+            animator.SetFloat("Y", _body.velocity.y);
+        }
+    }
+}
+    

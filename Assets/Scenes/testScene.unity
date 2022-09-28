@@ -5689,6 +5689,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e37891868638f5016a1bb897ad256841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &368572023
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368572006}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 28b9024b28f4c496795cc6c5720270a7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &368572024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368572006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4998361cd5084504a23e883d9bc18ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 368572023}
 --- !u!1 &576298470
 GameObject:
   m_ObjectHideFlags: 0
@@ -15653,31 +15686,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionParticleSystem: {fileID: 0}
   Ember: {fileID: 0}
---- !u!1 &1912046845 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1255965233551953229, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
-  m_PrefabInstance: {fileID: 1255965233246976811}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1912046846
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912046845}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 28b9024b28f4c496795cc6c5720270a7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &465182161044967216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15802,7 +15810,7 @@ PrefabInstance:
     - target: {fileID: 1255965233551953216, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 1912046846}
+      objectReference: {fileID: 0}
     - target: {fileID: 1255965233551953217, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -15873,7 +15881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1255965233551953223, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
       propertyPath: m_Offset.y
-      value: 0.12560105
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1255965233551953223, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
