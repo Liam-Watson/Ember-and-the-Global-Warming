@@ -26,7 +26,7 @@ namespace Shinjingi{
         }
         void FixedUpdate(){
             animator.SetFloat("Speed", Mathf.Min(1, Mathf.Abs(_body.velocity.x/10)));
-            animator.SetFloat("X", _body.velocity.x);
+            animator.SetFloat("X", Input.GetAxis("Horizontal"));
             animator.SetFloat("Y", _body.velocity.y);
         }
     }
