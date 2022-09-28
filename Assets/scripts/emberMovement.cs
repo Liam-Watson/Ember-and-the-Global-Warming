@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class emberMovement : MonoBehaviour
 {
+    public Animator animator;
     // Start is called before the first frame update
     [SerializeField] private LayerMask blockLayerMask;
     private float emberSpeed = 15.0f;
@@ -45,5 +46,8 @@ public class emberMovement : MonoBehaviour
     {
         var horizontalInput = Input.GetAxisRaw("Horizontal");
         emberRB.velocity = new Vector2(horizontalInput * emberSpeed, emberRB.velocity.y);
+        // animator.SetFloat("Speed", emberRB.velocity.magnitude);
+        animator.SetFloat("X", emberRB.velocity.x);
+        animator.SetFloat("Y", emberRB.velocity.y);
     }
 }
