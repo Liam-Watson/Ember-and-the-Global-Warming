@@ -8,12 +8,16 @@ public class attack : MonoBehaviour
     public GameObject fireball;
     private Vector3 worldPositionMouse;
     private  GameObject fireballObj;
+    public float selfDamage;
+    public EmberGeneral ember;
     // Start is called before the first frame update
     void Start()
     {
+        ember = GameObject.Find("Ember").GetComponent<EmberGeneral>();
         
     }
 
+    
     // Update is called once per frame
     void Update()
     {
@@ -28,8 +32,10 @@ public class attack : MonoBehaviour
             
             if (worldPositionMouse.x < charPos.x){
                 fireballObj = Instantiate(fireball, (charPos), projPos.rotation);
+                ember.TakeDamage(selfDamage);
             }else{
                 fireballObj = Instantiate(fireball, charPos, projPos.rotation);
+                ember.TakeDamage(selfDamage);
             }
             Physics2D.IgnoreCollision(fireballObj.GetComponent<Collider2D>(), GetComponent<Collider2D>());
             

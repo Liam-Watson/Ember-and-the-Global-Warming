@@ -7,6 +7,7 @@ public class heatWaveParticles : MonoBehaviour
     public ParticleSystem collisionParticleSystem;
     public GameObject Ember;
     private Transform pos;
+    public float selfDamage;
     // private Vector3 playerPos;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,8 @@ public class heatWaveParticles : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(1)){
             collisionParticleSystem.Play();
+            //Damage ember
+            Ember.GetComponent<EmberGeneral>().TakeDamage(selfDamage);
         }
     }
     void DestroyObject(){
