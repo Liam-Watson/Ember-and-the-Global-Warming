@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3897356168705546033}
   - component: {fileID: 3897356168705546032}
   - component: {fileID: 3897356168705546035}
+  - component: {fileID: 2324632330994651979}
   m_Layer: 0
   m_Name: Fireman
   m_TagString: Untagged
@@ -109,5 +110,25 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 4}
+  m_Size: {x: 1.9, y: 3.4}
   m_EdgeRadius: 0
+--- !u!95 &2324632330994651979
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3897356168705546038}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5dcd4e3db96404418bd06feedcadd93e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

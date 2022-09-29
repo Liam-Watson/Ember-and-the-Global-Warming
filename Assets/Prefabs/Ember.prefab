@@ -69,6 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48938651ed462cc0886157e7b05aed37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   blockLayerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -137,18 +138,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008572578, y: 0.075855374}
+  m_Offset: {x: -0.037, y: -0.01}
   m_SpriteTilingProperty:
-    border: {x: 0.29, y: 0.06, z: 0.39, w: 0.04}
+    border: {x: 0.90625, y: 0.1875, z: 1.21875, w: 0.125}
     pivot: {x: 0.45478037, y: 0.46447024}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 4, y: 4}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6777724, y: 1.2192454}
+  m_Size: {x: 1.7, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &1255965233551953221
 MonoBehaviour:
@@ -164,3 +165,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projPos: {fileID: 1255965233551953217}
   fireball: {fileID: 7012198663748585903, guid: b38fd5550849d64ef952943223932a2c, type: 3}
+  selfDamage: 0
+  ember: {fileID: 0}
