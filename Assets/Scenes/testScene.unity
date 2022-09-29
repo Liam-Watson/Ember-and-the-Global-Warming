@@ -5852,9 +5852,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _jumpHeight: 23.7
-  _maxAirJumps: 0
+  _maxAirJumps: 2
   _downwardMovementMultiplier: 5
   _upwardMovementMultiplier: 3.95
+  selfDamage: 0
+  ember: {fileID: 0}
+  ps: {fileID: 4440854228793495643, guid: f9d7f3325ae6c20efbf8c42445419b48, type: 3}
+  emberRB: {fileID: 0}
 --- !u!114 &368572017
 MonoBehaviour:
   m_ObjectHideFlags: 0

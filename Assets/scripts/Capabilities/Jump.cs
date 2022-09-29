@@ -19,6 +19,11 @@ namespace Shinjingi
         private float _defaultGravityScale, _jumpSpeed;
 
         private bool _desiredJump, _onGround;
+        public float selfDamage;
+        public EmberGeneral ember;
+
+        public GameObject ps;
+        public Rigidbody2D emberRB;
 
 
         // Start is called before the first frame update
@@ -29,6 +34,9 @@ namespace Shinjingi
             _controller = GetComponent<Controller>();
 
             _defaultGravityScale = 1f;
+
+            ember = GameObject.Find("Ember").GetComponent<EmberGeneral>();
+            emberRB = GameObject.Find("Ember").GetComponent<Rigidbody2D>();
         }
 
         // Update is called once per frame
@@ -71,8 +79,17 @@ namespace Shinjingi
         private void JumpAction()
         {
             if (_onGround || _jumpPhase < _maxAirJumps)
-            {
+            {   
+                
                 _jumpPhase += 1;
+
+                if(_jumpPhase > 0)
+                {
+                    ember.TakeDamage(10f);
+                    ps = Instantiate(ps, emberRB.position, Quaternion.identity);
+                    ParticleSystem  ps2 = ps.GetComponent<ParticleSystem>();
+                    ps2.Play();
+                }
                 
                 _jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * _jumpHeight);
                 
