@@ -22,9 +22,14 @@ namespace Shinjingi{
         // Update is called once per frame
         void Update()
         {
-            
+            if (Input.GetKeyDown(KeyCode.Space)){
+                animator.SetBool("Space_Pressed", true);
+            }else{
+                animator.SetBool("Space_Pressed", false);
+            }
         }
         void FixedUpdate(){
+            
             animator.SetFloat("Speed", Mathf.Min(1, Mathf.Abs(_body.velocity.x/10)));
             animator.SetFloat("X", Input.GetAxis("Horizontal"));
             animator.SetFloat("Y", _body.velocity.y);
