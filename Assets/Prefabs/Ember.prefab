@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1255965233551953222}
   - component: {fileID: 1255965233551953223}
   - component: {fileID: 1255965233551953221}
+  - component: {fileID: 628340514709724066}
   m_Layer: 0
   m_Name: Ember
   m_TagString: Player
@@ -55,7 +56,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1255965233551953216
 MonoBehaviour:
@@ -167,3 +168,19 @@ MonoBehaviour:
   fireball: {fileID: 7012198663748585903, guid: b38fd5550849d64ef952943223932a2c, type: 3}
   selfDamage: 0
   ember: {fileID: 0}
+--- !u!114 &628340514709724066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255965233551953229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76653fb82c95f8447aa97936c03e4e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  dashSpeed: 0
+  startDashTime: 0
+  ps: {fileID: 4440854228793495643, guid: 36bb30821986057689474ce7d11dee6e, type: 3}

@@ -34,8 +34,8 @@ namespace Shinjingi
         {
             _onGround = _ground.OnGround;
             _velocity = _body.velocity;
-
-            _acceleration = _onGround ? _maxAcceleration : _maxAirAcceleration;
+            _acceleration = _maxAcceleration;
+            // _acceleration = _onGround ? _maxAcceleration : _maxAirAcceleration;
             _maxSpeedChange = _acceleration * Time.deltaTime;
             _velocity.x = Mathf.MoveTowards(_velocity.x, _desiredVelocity.x, _maxSpeedChange);
 
