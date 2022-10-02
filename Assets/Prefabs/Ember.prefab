@@ -206,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1000
   currentHealth: 0
-  heatBar: {fileID: 0}
+  heatBar: {fileID: 1249752011807200307, guid: b36826ac82cb465e4887fb73bc37d635, type: 3}
 --- !u!114 &4352818878065924332
 MonoBehaviour:
   m_ObjectHideFlags: 0
