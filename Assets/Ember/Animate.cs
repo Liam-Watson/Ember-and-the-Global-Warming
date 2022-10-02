@@ -22,11 +22,11 @@ namespace Shinjingi{
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space)){
-                animator.SetBool("Space_Pressed", true);
-            }else{
-                animator.SetBool("Space_Pressed", false);
-            }
+            // if (Input.GetKeyDown(KeyCode.Space)){
+            //     animator.SetBool("Space_Pressed", true);
+            // }else{
+            //     animator.SetBool("Space_Pressed", false);
+            // }
         }
         void FixedUpdate(){
             
