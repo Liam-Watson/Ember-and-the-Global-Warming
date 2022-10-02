@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 174728e04433c7ef9a109ca1d5221e42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 1000
   currentHealth: 0
   heatBar: {fileID: 0}
 --- !u!114 &4352818878065924332
@@ -253,7 +253,7 @@ MonoBehaviour:
   _upwardMovementMultiplier: 4
   selfDamage: 10
   ember: {fileID: 0}
-  ps: {fileID: 0}
+  ps: {fileID: 4440854228793495643, guid: f9d7f3325ae6c20efbf8c42445419b48, type: 3}
   emberRB: {fileID: 0}
 --- !u!114 &855030497383998824
 MonoBehaviour:

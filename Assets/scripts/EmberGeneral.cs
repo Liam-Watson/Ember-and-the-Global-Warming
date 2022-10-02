@@ -32,7 +32,7 @@ public class EmberGeneral : MonoBehaviour
         if (currentHealth <= 0){
             Destroy(GameObject.Find("Ember"));
         }
-        Debug.Log(currentHealth);
+        // Debug.Log(currentHealth);
         heatBar.SetHealth(currentHealth);
     }
 }

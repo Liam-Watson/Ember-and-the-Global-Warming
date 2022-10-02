@@ -58,6 +58,7 @@ namespace Shinjingi
             if (_desiredJump)
             {
                 _desiredJump = false;
+                Debug.Log("JUMP");
                 JumpAction();
             }
 
@@ -78,9 +79,10 @@ namespace Shinjingi
         }
         private void JumpAction()
         {
+            
             if (_onGround || _jumpPhase < _maxAirJumps)
             {   
-                
+                Debug.Log(_onGround || _jumpPhase < _maxAirJumps);  
                 _jumpPhase += 1;
 
                 if(_jumpPhase > 0)
