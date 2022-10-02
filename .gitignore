@@ -5,3 +5,4 @@ Logs
 *.DS_Store
 Library
 .history
+mono_crash*
