@@ -173,8 +173,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projPos: {fileID: 1255965233551953217}
   fireball: {fileID: 7012198663748585903, guid: b38fd5550849d64ef952943223932a2c, type: 3}
-  selfDamage: 0
-  ember: {fileID: 0}
+  selfDamage: 10
+  ember: {fileID: -6747552905212164286}
 --- !u!114 &628340514709724066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,8 +188,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  dashSpeed: 0
-  startDashTime: 0
+  dashSpeed: 50
+  startDashTime: 0.1
   selfDamage: 100
   ps: {fileID: 4440854228793495643, guid: 36bb30821986057689474ce7d11dee6e, type: 3}
 --- !u!114 &-6747552905212164286
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c85acf98facd62d69d43f28b5c4cad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: {fileID: 0}
+  input: {fileID: 11400000, guid: a2f0169d1a5334361a29ad4439d91ece, type: 2}
 --- !u!114 &9084426396623528187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,8 +232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 130c81b7cc83f6fea9040742b309e9a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxSpeed: 4
-  _maxAcceleration: 35
+  _maxSpeed: 15
+  _maxAcceleration: 42
   _maxAirAcceleration: 20
 --- !u!114 &4228428161913958909
 MonoBehaviour:
@@ -247,11 +247,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2363cf8a8447ceaa81e8dc0bcc365fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpHeight: 3
-  _maxAirJumps: 0
-  _downwardMovementMultiplier: 3
-  _upwardMovementMultiplier: 1.7
-  selfDamage: 0
+  _jumpHeight: 24
+  _maxAirJumps: 2
+  _downwardMovementMultiplier: 5
+  _upwardMovementMultiplier: 4
+  selfDamage: 10
   ember: {fileID: 0}
   ps: {fileID: 0}
   emberRB: {fileID: 0}
