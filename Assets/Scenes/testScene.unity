@@ -10333,6 +10333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grasslander
       objectReference: {fileID: 0}
+    - target: {fileID: 465182159730562540, guid: 9c0d5f5c0ab24f036ad4eeb8ca3d416f, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 465182159730562542, guid: 9c0d5f5c0ab24f036ad4eeb8ca3d416f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -10442,6 +10446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Woodworker
       objectReference: {fileID: 0}
+    - target: {fileID: 776984101219469748, guid: 059733457f583735f96a61ae355ad558, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059733457f583735f96a61ae355ad558, type: 3}
 --- !u!1001 &1255965233246976811
@@ -10473,7 +10481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 628340514709724066, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
       propertyPath: startDashTime
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1255965233551953216, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
       propertyPath: animator
@@ -14375,6 +14383,10 @@ PrefabInstance:
     - target: {fileID: 3897356168705546038, guid: 8653e5aca690b0dfea63cc167f09acb2, type: 3}
       propertyPath: m_Name
       value: Fireman
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897356168705546038, guid: 8653e5aca690b0dfea63cc167f09acb2, type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8653e5aca690b0dfea63cc167f09acb2, type: 3}
