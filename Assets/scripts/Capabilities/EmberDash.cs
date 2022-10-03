@@ -27,7 +27,6 @@ public class EmberDash : MonoBehaviour
     void Update()
     {   
         var prevVel = rb.velocity;
-        Debug.Log(rb.gravityScale);
         if(direction == 0){
             if(Input.GetAxisRaw("Horizontal") > 0  && Input.GetKeyDown(KeyCode.LeftShift)){
                 direction = 1;
@@ -62,7 +61,6 @@ public class EmberDash : MonoBehaviour
                 rb.velocity = prevVel;
                 rb.gravityScale = gravityScale;
             } else{
-                Debug.Log(dashTime);
                 dashTime -= Time.deltaTime;
                 rb.gravityScale = 0;
                 if(direction == 1){

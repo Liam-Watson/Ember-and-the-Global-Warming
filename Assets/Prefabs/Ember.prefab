@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 855030497383998824}
   - component: {fileID: 772404184403053334}
   - component: {fileID: -5392313277110391599}
-  - component: {fileID: 102038714150460950}
   m_Layer: 0
   m_Name: Ember
   m_TagString: Player
@@ -301,17 +300,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 772404184403053334}
---- !u!114 &102038714150460950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255965233551953229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ab0a53bda3072da0b61e27b6ff2bcba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ps: {fileID: 0}
-  emberRB: {fileID: 0}
