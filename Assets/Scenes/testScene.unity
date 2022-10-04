@@ -10467,6 +10467,10 @@ PrefabInstance:
       propertyPath: currentHealth
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: -5392313277110391599, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 628340514709724066, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
       propertyPath: ps
       value: 
@@ -10602,6 +10606,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1255965233551953216, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
     - {fileID: 102038714150460950, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
+    - {fileID: -5392313277110391599, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
 --- !u!1001 &1411761022341008198
 PrefabInstance:
