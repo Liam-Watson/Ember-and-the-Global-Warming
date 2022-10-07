@@ -168,7 +168,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108279927}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16a5fcd84926b47aeae5f9195646a84c, type: 3}
   m_Name: 
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149123939}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16a5fcd84926b47aeae5f9195646a84c, type: 3}
   m_Name: 
@@ -534,7 +534,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624264365}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16a5fcd84926b47aeae5f9195646a84c, type: 3}
   m_Name: 
@@ -669,7 +669,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992755687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16a5fcd84926b47aeae5f9195646a84c, type: 3}
   m_Name: 
@@ -768,7 +768,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083901718}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16a5fcd84926b47aeae5f9195646a84c, type: 3}
   m_Name: 
@@ -1094,6 +1094,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1694549182197760865, guid: e0aaab08a714f3631bf39e6c8d7ef36d, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.14117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694549182197760865, guid: e0aaab08a714f3631bf39e6c8d7ef36d, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.04705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694549182197760865, guid: e0aaab08a714f3631bf39e6c8d7ef36d, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.04705883
+      objectReference: {fileID: 0}
     - target: {fileID: 1694549182197760871, guid: e0aaab08a714f3631bf39e6c8d7ef36d, type: 3}
       propertyPath: m_Name
       value: Main Camera (1)
@@ -1241,7 +1253,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382725279}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16a5fcd84926b47aeae5f9195646a84c, type: 3}
   m_Name: 
@@ -1340,7 +1352,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399856752}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16a5fcd84926b47aeae5f9195646a84c, type: 3}
   m_Name: 
@@ -1439,7 +1451,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428436311}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16a5fcd84926b47aeae5f9195646a84c, type: 3}
   m_Name: 
