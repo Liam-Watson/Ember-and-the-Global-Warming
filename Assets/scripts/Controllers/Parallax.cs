@@ -25,7 +25,7 @@ public class Parallax : MonoBehaviour
         float distance = (cam.transform.position.x * parallaxScale);
         transform.position = new Vector3(startpos+ distance, y, z);
 
-        // if(temp > startpos + length) startpos += length;
-        // else if(temp < startpos + length) startpos -= length;
+        if(temp > startpos + length) startpos += length;
+        else if(temp < startpos - length) startpos -= length;
     }
 }
