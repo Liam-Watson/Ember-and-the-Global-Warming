@@ -535,23 +535,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059733457f583735f96a61ae355ad558, type: 3}
---- !u!1 &1383717596 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 465182159730562540, guid: 9c0d5f5c0ab24f036ad4eeb8ca3d416f, type: 3}
-  m_PrefabInstance: {fileID: 465182161044967216}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1383717600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383717596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4aff9f08e3d0b5310a5e64cc2b462e75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1475012369
 GameObject:
   m_ObjectHideFlags: 0
@@ -10329,13 +10312,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1383717600, guid: 9c0d5f5c0ab24f036ad4eeb8ca3d416f, type: 3}
+      propertyPath: ember
+      value: 
+      objectReference: {fileID: 368572006}
     - target: {fileID: 465182159730562540, guid: 9c0d5f5c0ab24f036ad4eeb8ca3d416f, type: 3}
       propertyPath: m_Name
       value: Grasslander
-      objectReference: {fileID: 0}
-    - target: {fileID: 465182159730562540, guid: 9c0d5f5c0ab24f036ad4eeb8ca3d416f, type: 3}
-      propertyPath: m_TagString
-      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 465182159730562542, guid: 9c0d5f5c0ab24f036ad4eeb8ca3d416f, type: 3}
       propertyPath: m_RootOrder
@@ -10380,14 +10363,6 @@ PrefabInstance:
     - target: {fileID: 465182159730562542, guid: 9c0d5f5c0ab24f036ad4eeb8ca3d416f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 465182159730562543, guid: 9c0d5f5c0ab24f036ad4eeb8ca3d416f, type: 3}
-      propertyPath: m_Size.x
-      value: 2.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 465182159730562543, guid: 9c0d5f5c0ab24f036ad4eeb8ca3d416f, type: 3}
-      propertyPath: m_Size.y
-      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c0d5f5c0ab24f036ad4eeb8ca3d416f, type: 3}
