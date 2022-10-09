@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 776984101219469746}
   - component: {fileID: 776984101219469745}
   - component: {fileID: 5118082426560171659}
+  - component: {fileID: 1244647290125910988}
   m_Layer: 0
   m_Name: Woodworker
   m_TagString: enemy
@@ -132,3 +133,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1244647290125910988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776984101219469748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eedc8d693102e3b738907c753035c743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proj: {fileID: 5801590572721534518, guid: 5392e0ebaf34f483e961a04dc6d5c082, type: 3}
+  range: 15
+  fireRate: 2.5
