@@ -58,7 +58,7 @@ public class EmberDash : MonoBehaviour
                 direction = 0;
                 // dashTime = 0;
                 dashTime = startDashTime;
-                rb.velocity = prevVel;
+                // rb.velocity = prevVel;
                 rb.gravityScale = gravityScale;
             } else{
                 dashTime -= Time.deltaTime;

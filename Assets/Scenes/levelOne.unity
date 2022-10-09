@@ -3974,6 +3974,22 @@ PrefabInstance:
       propertyPath: heatBar
       value: 
       objectReference: {fileID: 640322894}
+    - target: {fileID: -6747552905212164286, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
+      propertyPath: currentHealth
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 628340514709724066, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
+      propertyPath: dashSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 628340514709724066, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
+      propertyPath: selfDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 628340514709724066, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
+      propertyPath: startDashTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1255965233551953217, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
       propertyPath: m_RootOrder
       value: 1
