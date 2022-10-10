@@ -10,6 +10,8 @@ public class attack : MonoBehaviour
     private  GameObject fireballObj;
     public float selfDamage;
     public EmberGeneral ember;
+
+    public GameObject soundEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +34,11 @@ public class attack : MonoBehaviour
             
             if (worldPositionMouse.x < charPos.x){
                 fireballObj = Instantiate(fireball, (charPos), projPos.rotation);
+                Instantiate(soundEffect, charPos, Quaternion.identity);
                 ember.TakeDamage(selfDamage);
             }else{
                 fireballObj = Instantiate(fireball, charPos, projPos.rotation);
+                Instantiate(soundEffect, charPos, Quaternion.identity);
                 ember.TakeDamage(selfDamage);
             }
             Physics2D.IgnoreCollision(fireballObj.GetComponent<Collider2D>(), GetComponent<Collider2D>());
