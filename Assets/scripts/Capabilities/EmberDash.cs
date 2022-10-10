@@ -15,6 +15,8 @@ public class EmberDash : MonoBehaviour
     public GameObject ps;
 
     private float gravityScale;
+
+    public GameObject soundEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,22 +35,26 @@ public class EmberDash : MonoBehaviour
                 rb.gravityScale = 0;
                 // ps.GetComponent<ParticleSystem>().transform.rotation = Quaternion.Euler(new Vector3(0f, -90f, 0f));
                 Instantiate(ps, transform.position, Quaternion.Euler(new Vector3(0f, 180f, 0f)));
+                Instantiate(soundEffect, transform.position, Quaternion.identity);
                 GetComponent<EmberGeneral>().TakeDamage(selfDamage);
             }else if(Input.GetAxisRaw("Horizontal") < 0  && Input.GetKeyDown(KeyCode.LeftShift)){
                 direction = -1;
                 rb.gravityScale = 0;
                 
                 Instantiate(ps, transform.position, Quaternion.identity);
+                Instantiate(soundEffect, transform.position, Quaternion.identity);
                 GetComponent<EmberGeneral>().TakeDamage(selfDamage);
             }else{
                 if(prevVel.x > 0  && Input.GetKeyDown(KeyCode.LeftShift)){
                     direction = 1;
                     Instantiate(ps, transform.position, Quaternion.identity);
+                    Instantiate(soundEffect, transform.position, Quaternion.identity);
                     GetComponent<EmberGeneral>().TakeDamage(selfDamage);
                     rb.gravityScale = 0;
                 }else if(prevVel.x < 0  && Input.GetKeyDown(KeyCode.LeftShift)){
                     direction = -1;
                     Instantiate(ps, transform.position, Quaternion.identity);
+                    Instantiate(soundEffect, transform.position, Quaternion.identity);
                     GetComponent<EmberGeneral>().TakeDamage(selfDamage);
                     rb.gravityScale = 0;
                 }

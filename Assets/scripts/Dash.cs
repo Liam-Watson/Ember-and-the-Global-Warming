@@ -6,6 +6,8 @@ public class Dash : MonoBehaviour
 {
     public GameObject ps;
     public Rigidbody2D emberRB;
+
+    public GameObject soundEffect;
     // public 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,7 @@ public class Dash : MonoBehaviour
             ps = Instantiate(ps, emberRB.position, Quaternion.identity);
             ParticleSystem  ps2 = ps.GetComponent<ParticleSystem>();
             ps2.Play();
+            Instantiate(soundEffect, emberRB.position, Quaternion.identity);
         }
     }
 }

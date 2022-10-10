@@ -178,6 +178,7 @@ MonoBehaviour:
   startDashTime: 0.3
   selfDamage: 10
   ps: {fileID: 4440854228793495643, guid: 36bb30821986057689474ce7d11dee6e, type: 3}
+  soundEffect: {fileID: 8960720995669401700, guid: 9289e324695cac74c88600cb8ee4d235, type: 3}
 --- !u!114 &-6747552905212164286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,7 +299,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce04a4f664cead768a13716de2575df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 0}
+  ps: {fileID: 9194623876086079798, guid: 9dc44e2f119711d4d94cdf0f4e3c1d24, type: 3}
+  soundEffect: {fileID: 4157312709660282176, guid: b83c34d6fc9a9b98b881b6f07d69e8df, type: 3}
   selfDamage: 0
 --- !u!1 &4545543361864427707
 GameObject:

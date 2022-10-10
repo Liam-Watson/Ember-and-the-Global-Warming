@@ -9,6 +9,8 @@ public class HeatWave : MonoBehaviour
     private Rigidbody2D emberRidgidbody;
     public GameObject ps;
 
+    public GameObject soundEffect;
+
     public float selfDamage;
     void Start()
     {
@@ -22,7 +24,7 @@ public class HeatWave : MonoBehaviour
         if(Input.GetMouseButtonDown(1)){
             ps.GetComponent<Transform>().position = ember.position;
             Instantiate(ps, ember.position, Quaternion.Euler(new Vector3(-90f, 0f, 0f)));
-            
+            Instantiate(soundEffect, ember.position, Quaternion.identity);
             // ps.GetComponent<ParticleSystem>().Play();
             //Damage ember
             GetComponent<EmberGeneral>().TakeDamage(selfDamage);
