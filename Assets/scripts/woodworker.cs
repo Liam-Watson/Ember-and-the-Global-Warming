@@ -7,6 +7,7 @@ public class woodworker : MonoBehaviour
     public GameObject proj;
     public float range;
     public float fireRate;
+    public Animator animator;
 
     private GameObject ember;
     private Vector3 spawnPos;
@@ -44,7 +45,8 @@ public class woodworker : MonoBehaviour
 
     private void OnParticleCollision(GameObject other) {
         if(other.gameObject.tag == "heatwave"){
-            Destroy(gameObject);
+            animator.SetBool("isDead", true);
+            Destroy(gameObject, 1.1f);
         }
     }
 }

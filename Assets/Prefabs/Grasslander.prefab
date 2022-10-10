@@ -148,3 +148,4 @@ MonoBehaviour:
   blade: {fileID: 3288815812929102030, guid: 2a56ae485c67cfd32b5ed8f18adc1f61, type: 3}
   range: 20
   fireRate: 2
+  animator: {fileID: -4611523613097899109}

@@ -42,7 +42,9 @@ public class fireball : MonoBehaviour
     {
         Debug.Log(collision.gameObject.tag);
         if(collision.gameObject.tag != "Player" && collision.gameObject.tag != "block"){
-            Destroy(collision.gameObject);
+            Animator animator = collision.gameObject.GetComponent<Animator>();
+            animator.SetBool("isDead", true);
+            Destroy(collision.gameObject, 1.1f);
             Destroy(gameObject);
         }else if(collision.gameObject.tag == "block"){
             Destroy(gameObject);

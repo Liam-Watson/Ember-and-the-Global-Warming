@@ -8,6 +8,8 @@ public class grasslander : MonoBehaviour
     public float range;
     public float fireRate;
 
+    public Animator animator;
+
     private GameObject ember;
     private Vector3 currentPos;
     private GameObject grassBlade;
@@ -44,7 +46,8 @@ public class grasslander : MonoBehaviour
 
     private void OnParticleCollision(GameObject other) {
         if(other.gameObject.tag == "heatwave"){
-            Destroy(gameObject);
+            animator.SetBool("isDead", true);
+            Destroy(gameObject, 1.1f);
         }
     }
 }

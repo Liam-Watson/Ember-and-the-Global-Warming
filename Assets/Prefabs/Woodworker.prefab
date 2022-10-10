@@ -148,3 +148,4 @@ MonoBehaviour:
   proj: {fileID: 5801590572721534518, guid: 5392e0ebaf34f483e961a04dc6d5c082, type: 3}
   range: 15
   fireRate: 2.5
+  animator: {fileID: 5118082426560171659}
