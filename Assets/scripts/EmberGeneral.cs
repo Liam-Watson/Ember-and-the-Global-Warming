@@ -29,8 +29,14 @@ public class EmberGeneral : MonoBehaviour
     //Subtract health over time
     public void  TakeDamage(float damage){
         currentHealth -= damage;
+        
         if (currentHealth <= 0){
-            Destroy(GameObject.Find("Ember"));
+            GameObject ember = GameObject.Find("Ember");
+            Animator animator = ember.GetComponent<Animator>();
+            animator.SetBool("isDead", true);
+            Destroy(ember, 1.3f);
+            // Destroy(gameObject);
+            // Destroy(GameObject.Find("Ember"));
         }
         // Debug.Log(currentHealth);
         heatBar.SetHealth(currentHealth);
