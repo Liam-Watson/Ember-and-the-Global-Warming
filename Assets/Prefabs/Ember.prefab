@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1255965233551953217}
   - component: {fileID: 1255965233551953218}
-  - component: {fileID: 1255965233551953216}
   - component: {fileID: 1255965233551953222}
   - component: {fileID: 1255965233551953223}
   - component: {fileID: 1255965233551953221}
@@ -22,6 +21,7 @@ GameObject:
   - component: {fileID: 855030497383998824}
   - component: {fileID: 772404184403053334}
   - component: {fileID: -5392313277110391599}
+  - component: {fileID: 2399331156400793639}
   m_Layer: 0
   m_Name: Ember
   m_TagString: Player
@@ -66,22 +66,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &1255965233551953216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255965233551953229}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48938651ed462cc0886157e7b05aed37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  blockLayerMask:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!212 &1255965233551953222
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -189,9 +173,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  dashSpeed: 100
-  startDashTime: 0.1
-  selfDamage: 100
+  dashSpeed: 50
+  startDashTime: 0.3
+  selfDamage: 10
   ps: {fileID: 4440854228793495643, guid: 36bb30821986057689474ce7d11dee6e, type: 3}
 --- !u!114 &-6747552905212164286
 MonoBehaviour:
@@ -301,6 +285,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 772404184403053334}
+--- !u!114 &2399331156400793639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255965233551953229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce04a4f664cead768a13716de2575df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4545543361864427707
 GameObject:
   m_ObjectHideFlags: 0
