@@ -29,6 +29,7 @@ namespace Shinjingi{
             // }
         }
         void FixedUpdate(){
+            // Debug.Log(Input.GetMouseButtonDown(1));
             if(Input.GetMouseButtonDown(1)){
                 animator.SetBool("Wave_Attack", true);
                 

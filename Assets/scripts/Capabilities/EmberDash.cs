@@ -73,7 +73,11 @@ public class EmberDash : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other) {
         if(dashTime < startDashTime && other.gameObject.tag == "enemy"){
-            Destroy(other.gameObject);
+            other.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            Animator animator = other.gameObject.GetComponent<Animator>();
+            animator.SetBool("isDead", true);
+            Destroy(other.gameObject, 1.1f);
+            
         }
     }
 }
