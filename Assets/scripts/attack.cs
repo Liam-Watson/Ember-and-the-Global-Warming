@@ -36,10 +36,12 @@ public class attack : MonoBehaviour
                 fireballObj = Instantiate(fireball, (charPos), projPos.rotation);
                 Instantiate(soundEffect, charPos, Quaternion.identity);
                 ember.TakeDamage(selfDamage);
+                Debug.Log("left");
             }else{
                 fireballObj = Instantiate(fireball, charPos, projPos.rotation);
                 Instantiate(soundEffect, charPos, Quaternion.identity);
                 ember.TakeDamage(selfDamage);
+                Debug.Log("right");
             }
             Physics2D.IgnoreCollision(fireballObj.GetComponent<Collider2D>(), GetComponent<Collider2D>());
             

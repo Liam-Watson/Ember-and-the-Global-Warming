@@ -8,6 +8,8 @@ public class fireball : MonoBehaviour
     private Rigidbody2D rb;
     private Vector3 worldPositionMouse;
     public GameObject Ember;
+
+    public float healthGainOnKill;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,7 @@ public class fireball : MonoBehaviour
         if(collision.gameObject.tag != "Player"){
             Destroy(collision.gameObject);
             Destroy(gameObject);
+            
         }else{
             // Physics2D.IgnoreCollision(Ember.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         }
@@ -46,6 +49,7 @@ public class fireball : MonoBehaviour
             animator.SetBool("isDead", true);
             Destroy(collision.gameObject, 1.1f);
             Destroy(gameObject);
+            Ember.GetComponent<EmberGeneral>().TakeDamage(-1*healthGainOnKill);
         }else if(collision.gameObject.tag == "block"){
             Destroy(gameObject);
             // Physics2D.IgnoreCollision(Ember.GetComponent<Collider2D>(), GetComponent<Collider2D>());

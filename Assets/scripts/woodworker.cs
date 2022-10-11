@@ -14,6 +14,8 @@ public class woodworker : MonoBehaviour
     private GameObject woodworkerProj;
     private float shotTime;
 
+    public float healthGainOnKill;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +49,7 @@ public class woodworker : MonoBehaviour
         if(other.gameObject.tag == "heatwave"){
             animator.SetBool("isDead", true);
             Destroy(gameObject, 1.1f);
+            ember.GetComponent<EmberGeneral>().TakeDamage(-1*healthGainOnKill);
         }
     }
 }

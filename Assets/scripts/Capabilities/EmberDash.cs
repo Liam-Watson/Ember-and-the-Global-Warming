@@ -17,6 +17,8 @@ public class EmberDash : MonoBehaviour
     private float gravityScale;
 
     public GameObject soundEffect;
+
+    public float enemyKillHealthGain;
     // Start is called before the first frame update
     void Start()
     {
@@ -83,6 +85,7 @@ public class EmberDash : MonoBehaviour
             Animator animator = other.gameObject.GetComponent<Animator>();
             animator.SetBool("isDead", true);
             Destroy(other.gameObject, 1.1f);
+            GetComponent<EmberGeneral>().TakeDamage(-1f*enemyKillHealthGain);
             
         }
     }

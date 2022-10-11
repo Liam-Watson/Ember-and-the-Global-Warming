@@ -15,6 +15,8 @@ public class fireman : MonoBehaviour
     private GameObject firemanProj;
     private float shotTime;
 
+    public float healthGainOnKill;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +50,7 @@ public class fireman : MonoBehaviour
         if(other.gameObject.tag == "heatwave"){
             animator.SetBool("isDead", true);
             Destroy(gameObject, 1.1f);
+            ember.GetComponent<EmberGeneral>().TakeDamage(-1*healthGainOnKill);
         }
     }
 }
