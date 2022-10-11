@@ -9,6 +9,8 @@ public class firemanProj : MonoBehaviour
     private Transform ember;
     private Vector2 target;
 
+    public float damage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,16 @@ public class firemanProj : MonoBehaviour
         {
             DestroyProj();
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            ember.GetComponent<EmberGeneral>().TakeDamage(damage);
+            DestroyProj();
+        }
+        
     }
 
     void DestroyProj()

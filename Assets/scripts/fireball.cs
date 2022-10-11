@@ -43,7 +43,6 @@ public class fireball : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.tag);
         if(collision.gameObject.tag != "Player" && collision.gameObject.tag != "block"){
             Animator animator = collision.gameObject.GetComponent<Animator>();
             animator.SetBool("isDead", true);
