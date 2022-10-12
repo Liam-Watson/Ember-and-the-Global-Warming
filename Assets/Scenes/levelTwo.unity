@@ -523,6 +523,10 @@ PrefabInstance:
       propertyPath: heatBar
       value: 
       objectReference: {fileID: 1814674883}
+    - target: {fileID: -6747552905212164286, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
+      propertyPath: maxHealth
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 1255965233551953216, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
       propertyPath: m_Enabled
       value: 0
