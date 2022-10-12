@@ -62,5 +62,6 @@ public class EmberGeneral : MonoBehaviour
      transform.position = new Vector2(0, 0.9149879f);
      currentHealth = maxHealth;
      animator.SetBool("isDead", false);
+     Application.LoadLevel(Application.loadedLevel);
  }
 }
