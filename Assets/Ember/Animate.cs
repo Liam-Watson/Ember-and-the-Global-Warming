@@ -29,18 +29,12 @@ namespace Shinjingi{
             // }
         }
         void FixedUpdate(){
-            // Debug.Log(Input.GetMouseButtonDown(1));
-            if(Input.GetMouseButtonDown(1)){
-                animator.SetBool("Wave_Attack", true);
-                
-                
-                
-            }else{
-                animator.SetBool("Wave_Attack", false);
-                animator.SetFloat("Speed", Mathf.Min(1, Mathf.Abs(_body.velocity.x/10)));
-                animator.SetFloat("X", Input.GetAxis("Horizontal"));
-                animator.SetFloat("Y", _body.velocity.y);
-            }
+            
+            animator.SetBool("Wave_Attack", false);
+            animator.SetFloat("Speed", Mathf.Min(1, Mathf.Abs(_body.velocity.x/10)));
+            animator.SetFloat("X", Input.GetAxis("Horizontal"));
+            animator.SetFloat("Y", _body.velocity.y);
+        
             
         }
     }

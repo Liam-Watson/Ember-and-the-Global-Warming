@@ -22,12 +22,24 @@ public class HeatWave : MonoBehaviour
     void Update()
     {
         if(Input.GetMouseButtonDown(1)){
-            ps.GetComponent<Transform>().position = ember.position;
-            Instantiate(ps, ember.position, Quaternion.Euler(new Vector3(-90f, 0f, 0f)));
-            Instantiate(soundEffect, ember.position, Quaternion.identity);
-            // ps.GetComponent<ParticleSystem>().Play();
+            //Play Animation 
+            GameObject Ember = GameObject.Find("Ember");
+            Animator animator = Ember.GetComponent<Animator>();
+            Debug.Log(animator);
+            animator.SetBool("Wave_Attack", true);
+            
+            Invoke("InstantiatePSandSound", 0.5f);
+        
             //Damage ember
             GetComponent<EmberGeneral>().TakeDamage(selfDamage);
         }
+
     }
+    void InstantiatePSandSound(){
+        ps.GetComponent<Transform>().position = ember.position;
+        Instantiate(ps, ember.position, Quaternion.Euler(new Vector3(-90f, 0f, 0f)));
+        Instantiate(soundEffect, ember.position, Quaternion.identity);
+    }
+
+    
 }
