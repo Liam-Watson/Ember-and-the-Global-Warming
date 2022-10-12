@@ -46,6 +46,7 @@ public class fireball : MonoBehaviour
         if(collision.gameObject.tag != "Player" && collision.gameObject.tag != "block"){
             Animator animator = collision.gameObject.GetComponent<Animator>();
             animator.SetBool("isDead", true);
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             Destroy(collision.gameObject, 1.1f);
             Destroy(gameObject);
             Ember.GetComponent<EmberGeneral>().TakeDamage(-1*healthGainOnKill);

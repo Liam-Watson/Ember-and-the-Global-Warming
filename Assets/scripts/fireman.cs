@@ -49,6 +49,7 @@ public class fireman : MonoBehaviour
     private void OnParticleCollision(GameObject other) {
         if(other.gameObject.tag == "heatwave"){
             animator.SetBool("isDead", true);
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
             Destroy(gameObject, 1.1f);
             ember.GetComponent<EmberGeneral>().TakeDamage(-1*healthGainOnKill);
         }
