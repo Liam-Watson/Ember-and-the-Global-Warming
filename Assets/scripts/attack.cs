@@ -24,7 +24,7 @@ public class attack : MonoBehaviour
     void Update()
     {
         //get input from player
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !PauseMenu.gameIsPaused)
         {
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = Camera.main.nearClipPlane;

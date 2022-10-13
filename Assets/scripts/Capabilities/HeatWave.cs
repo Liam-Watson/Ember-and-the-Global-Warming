@@ -21,7 +21,7 @@ public class HeatWave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(1)){
+        if(Input.GetMouseButtonDown(1) && !PauseMenu.gameIsPaused){
             //Play Animation 
             GameObject Ember = GameObject.Find("Ember");
             Animator animator = Ember.GetComponent<Animator>();
