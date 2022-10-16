@@ -5,6 +5,7 @@ using UnityEngine;
 public class grassBlade : MonoBehaviour
 {
     public float speed;
+    public GameObject ps;
 
     private Transform ember;
     private Vector2 target;
@@ -20,11 +21,12 @@ public class grassBlade : MonoBehaviour
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
-
         if (transform.position.x == target.x && transform.position.y == target.y)
         {
             DestroyBlade();
         }
+
+        Instantiate(ps, transform.position, Quaternion.identity);
     }
     
     void OnTriggerEnter2D(Collider2D other)
