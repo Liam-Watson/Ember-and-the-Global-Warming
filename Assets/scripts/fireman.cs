@@ -29,7 +29,7 @@ public class fireman : MonoBehaviour
     void Update()
     {
         float emberX = ember.transform.position.x;
-        float emberY = ember.transform.position.x;
+        float emberY = ember.transform.position.y;
 
         Vector2 fireman = new Vector2(transform.position.x, transform.position.y);
         Vector2 emb = new Vector2(emberX, emberY);

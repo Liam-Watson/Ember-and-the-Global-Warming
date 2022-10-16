@@ -9,6 +9,7 @@ public class grassBlade : MonoBehaviour
 
     private Transform ember;
     private Vector2 target;
+    private Vector3 psPos;
 
     public float damage;
 
