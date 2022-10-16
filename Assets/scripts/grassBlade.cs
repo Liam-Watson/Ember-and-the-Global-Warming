@@ -10,6 +10,8 @@ public class grassBlade : MonoBehaviour
     private Transform ember;
     private Vector2 target;
 
+    public float damage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +35,19 @@ public class grassBlade : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            ember.GetComponent<EmberGeneral>().TakeDamage(damage);
             DestroyBlade();
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            ember.GetComponent<EmberGeneral>().TakeDamage(damage);
+            DestroyBlade();
+        }
+        
     }
 
     void DestroyBlade()

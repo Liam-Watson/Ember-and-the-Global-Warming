@@ -149,3 +149,4 @@ MonoBehaviour:
   range: 15
   fireRate: 2.5
   animator: {fileID: 5118082426560171659}
+  healthGainOnKill: 10

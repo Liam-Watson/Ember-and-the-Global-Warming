@@ -18,7 +18,7 @@ public class Dash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftShift)){
+        if(Input.GetKeyDown(KeyCode.LeftShift) && !PauseMenu.gameIsPaused){
             ps = Instantiate(ps, emberRB.position, Quaternion.identity);
             ParticleSystem  ps2 = ps.GetComponent<ParticleSystem>();
             ps2.Play();

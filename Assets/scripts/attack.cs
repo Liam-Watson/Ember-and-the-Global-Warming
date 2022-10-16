@@ -24,7 +24,7 @@ public class attack : MonoBehaviour
     void Update()
     {
         //get input from player
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !PauseMenu.gameIsPaused)
         {
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = Camera.main.nearClipPlane;
@@ -36,10 +36,12 @@ public class attack : MonoBehaviour
                 fireballObj = Instantiate(fireball, (charPos), projPos.rotation);
                 Instantiate(soundEffect, charPos, Quaternion.identity);
                 ember.TakeDamage(selfDamage);
+                Debug.Log("left");
             }else{
                 fireballObj = Instantiate(fireball, charPos, projPos.rotation);
                 Instantiate(soundEffect, charPos, Quaternion.identity);
                 ember.TakeDamage(selfDamage);
+                Debug.Log("right");
             }
             Physics2D.IgnoreCollision(fireballObj.GetComponent<Collider2D>(), GetComponent<Collider2D>());
             
