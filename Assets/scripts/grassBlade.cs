@@ -30,6 +30,7 @@ public class grassBlade : MonoBehaviour
         }
 
         Instantiate(ps, transform.position, Quaternion.identity);
+        ps.GetComponent<ParticleSystem>().Play();
     }
     
     void OnTriggerEnter2D(Collider2D other)
