@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7835584592302213454}
   - component: {fileID: 5145794834541709792}
   m_Layer: 0
-  m_Name: GrassBladePS
+  m_Name: WoodworkerProjPS - Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1363,10 +1363,10 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.49019608, g: 0.6509804, b: 0.15294118, a: 0}
-        key1: {r: 0.4900718, g: 0.6509434, b: 0.15045391, a: 1}
-        key2: {r: 0.49019608, g: 0.6509804, b: 0.15294118, a: 1}
-        key3: {r: 0, g: 0, b: 0, a: 1}
+        key0: {r: 0.21115166, g: 0.4002655, b: 0.6886792, a: 0}
+        key1: {r: 0.21176471, g: 0.4, b: 0.6901961, a: 1}
+        key2: {r: 0.21176471, g: 0.4, b: 0.6901961, a: 1}
+        key3: {r: 0.15789586, g: 0.3773585, b: 0.01601993, a: 1}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
@@ -1374,7 +1374,7 @@ ParticleSystem:
         ctime0: 193
         ctime1: 32575
         ctime2: 65535
-        ctime3: 0
+        ctime3: 65535
         ctime4: 0
         ctime5: 0
         ctime6: 0

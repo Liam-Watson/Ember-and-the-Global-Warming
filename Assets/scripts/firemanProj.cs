@@ -5,6 +5,7 @@ using UnityEngine;
 public class firemanProj : MonoBehaviour
 {
     public float speed;
+    public GameObject ps;
 
     private Transform ember;
     private Vector2 target;
@@ -27,6 +28,9 @@ public class firemanProj : MonoBehaviour
         {
             DestroyProj();
         }
+
+        Instantiate(ps, transform.position, Quaternion.identity);
+        ps.GetComponent<ParticleSystem>().Play();
     }
     
     void OnTriggerEnter2D(Collider2D other)
