@@ -238,7 +238,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.803
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -330,7 +330,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823389538}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9860eca0640b84a008be460f2ad8ed37, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: a5c0e6e02cf4744a0a65267228dd2078, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1012337823}
@@ -365,7 +365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823389538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.338499, y: -3.1551187, z: -3.0527494}
+  m_LocalPosition: {x: -0.38, y: -0.48, z: -3.0527494}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -385,4 +385,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vp: {fileID: 1823389540}
-  nextScene: 0
+  nextScene: 1
