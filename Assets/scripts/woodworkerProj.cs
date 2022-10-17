@@ -10,6 +10,7 @@ public class woodworkerProj : MonoBehaviour
     private Transform ember;
     private Vector2 target;
 
+    public GameObject waterAttackSound;
     public float damage;
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class woodworkerProj : MonoBehaviour
 
         Instantiate(ps, transform.position, Quaternion.identity);
         ps.GetComponent<ParticleSystem>().Play();
+        
     }
     
     void OnTriggerEnter2D(Collider2D other)
@@ -53,5 +55,9 @@ public class woodworkerProj : MonoBehaviour
     void DestroyProj()
     {
         Destroy(gameObject);
+    }
+    private void Awake() {
+        Instantiate(waterAttackSound, transform.position, Quaternion.identity);
+        waterAttackSound.GetComponent<AudioSource>().Play();
     }
 }

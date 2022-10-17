@@ -12,6 +12,8 @@ public class firemanProj : MonoBehaviour
 
     public float damage;
 
+    public GameObject foamSoundEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,5 +56,10 @@ public class firemanProj : MonoBehaviour
     void DestroyProj()
     {
         Destroy(gameObject);
+    }
+
+    private void Awake() {
+        Instantiate(foamSoundEffect, transform.position, Quaternion.identity);
+        foamSoundEffect.GetComponent<AudioSource>().Play();
     }
 }
