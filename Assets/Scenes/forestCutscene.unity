@@ -385,4 +385,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vp: {fileID: 620862441}
-  nextScene: 1
+  nextScene: 2
