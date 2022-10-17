@@ -49,6 +49,7 @@
      <Compile Include="Assets/scripts/grasslander.cs" />
      <Compile Include="Assets/scripts/Controllers/AIController.cs" />
      <Compile Include="Assets/scripts/EmberHeat.cs" />
+     <Compile Include="Assets/scripts/sceneSwitchOnVideoEnd.cs" />
      <Compile Include="Assets/scripts/Capabilities/Jump.cs" />
      <Compile Include="Assets/scripts/firemanProj.cs" />
      <Compile Include="Assets/scripts/Controllers/InputController.cs" />
@@ -60,13 +61,13 @@
      <Compile Include="Assets/scripts/fireman.cs" />
      <Compile Include="Assets/scripts/PauseMenu.cs" />
      <Compile Include="Assets/scripts/Controllers/Controller.cs" />
+     <Compile Include="Assets/scripts/MainMenu.cs" />
      <Compile Include="Assets/Ember/Animate.cs" />
      <Compile Include="Assets/scripts/grassBlade.cs" />
      <Compile Include="Assets/scripts/EmberGeneral.cs" />
      <Compile Include="Assets/scripts/attack.cs" />
      <Compile Include="Assets/scripts/Controllers/Parallax.cs" />
      <Compile Include="Assets/scripts/woodworker.cs" />
-     <Compile Include="Assets/scripts/MainMenu.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
