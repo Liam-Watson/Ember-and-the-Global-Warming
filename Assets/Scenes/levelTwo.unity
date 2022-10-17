@@ -295,6 +295,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5264788389006140233, guid: a42ad819cb0fd9ed38a38e5dd37772cc, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 5264788389006140232, guid: a42ad819cb0fd9ed38a38e5dd37772cc, type: 3}
+    - target: {fileID: 5264788389006140236, guid: a42ad819cb0fd9ed38a38e5dd37772cc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5264788389006140237, guid: a42ad819cb0fd9ed38a38e5dd37772cc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
