@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 2102114327}
   - component: {fileID: 2102114326}
   - component: {fileID: 2102114325}
+  - component: {fileID: 2102114328}
   m_Layer: 0
   m_Name: Cutscene
   m_TagString: Untagged
@@ -371,3 +372,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2102114328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102114324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 641ad603b2c02414ca242d15c0b5529f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vp: {fileID: 2102114326}
+  nextScene: 3

@@ -20,4 +20,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/menu.unity
     guid: 8f9880fcd91c0f468a177b2f8d95736a
+  - enabled: 1
+    path: Assets/Scenes/prologue.unity
+    guid: 324b023a5b8ec4d78b0a1f5736424882
+  - enabled: 1
+    path: Assets/Scenes/forestCutscene.unity
+    guid: 7804033b0e4ff433c842de94e5b30c85
+  - enabled: 1
+    path: Assets/Scenes/cityCutscene.unity
+    guid: f0abf90880ca542bc8e70cec7aad2c7e
+  - enabled: 1
+    path: Assets/Scenes/endScene.unity
+    guid: b5a9829b6ce854902a1f8904ad8113a3
   m_configObjects: {}
