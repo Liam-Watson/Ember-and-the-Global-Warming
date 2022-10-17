@@ -148,4 +148,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 25
   ps: {fileID: 5170922063188218397, guid: 5519aa2d42d03cc5e90ac09d9ea73642, type: 3}
+  waterAttackSound: {fileID: 6011874677566719777, guid: eb1e5e3cd19514771af37f356cc37afe, type: 3}
   damage: 0
