@@ -233,6 +233,10 @@ PrefabInstance:
       propertyPath: heatBar
       value: 
       objectReference: {fileID: 1529584199}
+    - target: {fileID: -6747552905212164286, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
+      propertyPath: maxHealth
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 1255965233551953216, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -283,7 +287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1255965233551953221, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
       propertyPath: selfDamage
-      value: 1000
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1255965233551953229, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
       propertyPath: m_Name
@@ -891,7 +895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa3796c6426b4386c856b3bd1a1a49de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToSwitchTo: 0
+  sceneToSwitchTo: 3
 --- !u!61 &541450616
 BoxCollider2D:
   m_ObjectHideFlags: 0
