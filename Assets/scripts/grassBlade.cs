@@ -13,6 +13,8 @@ public class grassBlade : MonoBehaviour
 
     public float damage;
 
+    public GameObject grassSlingSF;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,5 +57,10 @@ public class grassBlade : MonoBehaviour
     void DestroyBlade()
     {
         Destroy(gameObject);
+    }
+
+    private void Awake() {
+        Instantiate(grassSlingSF, transform.position, Quaternion.identity);
+        grassSlingSF.GetComponent<AudioSource>().Play();
     }
 }
