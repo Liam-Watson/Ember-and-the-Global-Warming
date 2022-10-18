@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _jumpHeight: 24
-  _maxAirJumps: 2
+  _maxAirJumps: 4
   _downwardMovementMultiplier: 5
   _upwardMovementMultiplier: 4
   selfDamage: 10
