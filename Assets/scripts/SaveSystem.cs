@@ -5,10 +5,11 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
+    private static string path  = Application.persistentDataPath + "/saves.fu";
+
     public static void SavePlayer(Player player)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/player" + player.playerName + ".poes";
         FileStream stream = new FileStream(path, FileMode.Create);
 
         PlayerData data = new PlayerData(player);
@@ -19,8 +20,7 @@ public static class SaveSystem
 
     public static PlayerData LoadPlayer()
     {
-        string path = Application.persistentDataPath + "/player.poes";
-        if (File.Exists(path))
+        if (Exists())
         {
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
@@ -33,8 +33,17 @@ public static class SaveSystem
 
         } else
         {
-            Debug.LogError("Save file ont found in " + path);
+            Debug.LogError("Save file not found in " + path);
             return null;
         }
+    }
+
+    public static bool Exists()
+    {
+        if (File.Exists(path))
+        {
+            return true;
+        }
+        return false;
     }
 }

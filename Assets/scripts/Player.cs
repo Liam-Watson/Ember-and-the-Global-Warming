@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public int level;
-    public string playerName;
 
     public void SavePlayer()
     {
@@ -17,6 +16,5 @@ public class Player : MonoBehaviour
         PlayerData data = SaveSystem.LoadPlayer();
 
         level = data.level;
-        playerName = data.playerName;
     }
 }

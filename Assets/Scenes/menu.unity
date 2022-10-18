@@ -218,6 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startScene: 4
   userInput: {fileID: 1278496126}
+  loadButton: {fileID: 1547303362}
 --- !u!1 &148923064
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &489788707
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2354,6 +2355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startScene: 0
   userInput: {fileID: 0}
+  loadButton: {fileID: 0}
 --- !u!1 &1547303360
 GameObject:
   m_ObjectHideFlags: 0

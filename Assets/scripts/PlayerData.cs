@@ -6,7 +6,6 @@ using UnityEngine;
 public class PlayerData : MonoBehaviour
 {
     public int level;
-    public string playerName;
     
     public PlayerData(Player player)
     {
