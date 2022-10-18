@@ -25,6 +25,8 @@ namespace Shinjingi
         public GameObject ps;
         public Rigidbody2D emberRB;
 
+        public GameObject jumpSound;
+
 
         // Start is called before the first frame update
         void Awake()
@@ -80,6 +82,8 @@ namespace Shinjingi
         {
             
             if (_onGround ){
+                var sf = Instantiate(jumpSound, emberRB.position, Quaternion.identity);
+                sf.GetComponent<AudioSource>().Play();
                 _jumpPhase = 1;
                 _jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * _jumpHeight);
                 
@@ -104,6 +108,8 @@ namespace Shinjingi
                     ps = Instantiate(ps, emberRB.position, Quaternion.identity);
                     ParticleSystem  ps2 = ps.GetComponent<ParticleSystem>();
                     ps2.Play();
+                    var sf = Instantiate(jumpSound, emberRB.position, Quaternion.identity);
+                    sf.GetComponent<AudioSource>().Play();
                 }
                 
                 _jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * _jumpHeight);

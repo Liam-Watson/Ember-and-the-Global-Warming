@@ -243,6 +243,7 @@ MonoBehaviour:
   ember: {fileID: 0}
   ps: {fileID: 4440854228793495643, guid: f9d7f3325ae6c20efbf8c42445419b48, type: 3}
   emberRB: {fileID: 0}
+  jumpSound: {fileID: 1331450153532596416, guid: b45197019a8cdac4cbf508f77ede0a1d, type: 3}
 --- !u!114 &855030497383998824
 MonoBehaviour:
   m_ObjectHideFlags: 0
