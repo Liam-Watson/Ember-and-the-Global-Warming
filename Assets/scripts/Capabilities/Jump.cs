@@ -52,13 +52,12 @@ namespace Shinjingi
 
             if (_onGround)
             {
-                _jumpPhase = 0;
+                // _jumpPhase = 0;
             }
 
             if (_desiredJump)
             {
                 _desiredJump = false;
-                Debug.Log("JUMP");
                 JumpAction();
             }
 
@@ -80,12 +79,26 @@ namespace Shinjingi
         private void JumpAction()
         {
             
-            if (_onGround || _jumpPhase < _maxAirJumps)
-            {   
-                Debug.Log(_onGround || _jumpPhase < _maxAirJumps);  
+            if (_onGround ){
+                _jumpPhase = 1;
+                _jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * _jumpHeight);
+                
+                if (_velocity.y > 0f)
+                {
+                    _jumpSpeed = Mathf.Max(_jumpSpeed - _velocity.y, 0f);
+                }
+                else if (_velocity.y < 0f)
+                {
+                    _jumpSpeed += Mathf.Abs(_body.velocity.y);
+                }
+                _velocity.y += _jumpSpeed;
+            }else if( _jumpPhase < _maxAirJumps){   
+                
                 _jumpPhase += 1;
-
-                if(_jumpPhase > 0)
+                if(_onGround)
+                {
+                    
+                } else if(_jumpPhase  > 0)
                 {
                     ember.TakeDamage(10f);
                     ps = Instantiate(ps, emberRB.position, Quaternion.identity);
@@ -104,6 +117,7 @@ namespace Shinjingi
                     _jumpSpeed += Mathf.Abs(_body.velocity.y);
                 }
                 _velocity.y += _jumpSpeed;
+                
             }
         }
     }
