@@ -24,7 +24,7 @@ public class EmberGeneral : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GetComponent<Transform>().position.y <= -30f)
+        if(GetComponent<Transform>().position.y <= -80f)
         {
             currentHealth = 0f;
         }
