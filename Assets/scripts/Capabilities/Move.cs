@@ -36,7 +36,7 @@ namespace Shinjingi
             _onGround = _ground.OnGround;
             // Debug.Log(_onGround);
             if(_onGround){
-                prev_x = 0;
+                // prev_x = 0;
             }
             _velocity = _body.velocity;
             _acceleration = _maxAcceleration;
@@ -44,10 +44,10 @@ namespace Shinjingi
             _maxSpeedChange = _acceleration * Time.deltaTime;
             
             _velocity.x = Mathf.MoveTowards(_velocity.x, _desiredVelocity.x, _maxSpeedChange);
-            if(prev_x != _velocity.x){
-                _body.velocity = _velocity;
-            }
-            
+            // if(prev_x != _velocity.x){
+            //     _body.velocity = _velocity;
+            // }
+            _body.velocity = _velocity;
             prev_x = _velocity.x;
         }
     }
