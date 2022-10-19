@@ -16,6 +16,7 @@ namespace Shinjingi
 
         private float _maxSpeedChange, _acceleration;
         private bool _onGround;
+        private float prev_x = 0;
 
         private void Awake()
         {
@@ -33,13 +34,21 @@ namespace Shinjingi
         private void FixedUpdate()
         {
             _onGround = _ground.OnGround;
+            // Debug.Log(_onGround);
+            if(_onGround){
+                prev_x = 0;
+            }
             _velocity = _body.velocity;
             _acceleration = _maxAcceleration;
             // _acceleration = _onGround ? _maxAcceleration : _maxAirAcceleration;
             _maxSpeedChange = _acceleration * Time.deltaTime;
+            
             _velocity.x = Mathf.MoveTowards(_velocity.x, _desiredVelocity.x, _maxSpeedChange);
-
-            _body.velocity = _velocity;
+            if(prev_x != _velocity.x){
+                _body.velocity = _velocity;
+            }
+            
+            prev_x = _velocity.x;
         }
     }
 }
