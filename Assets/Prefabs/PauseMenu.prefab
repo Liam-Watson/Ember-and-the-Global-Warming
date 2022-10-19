@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 620256583762930361}
   - component: {fileID: 7093573284498959535}
   - component: {fileID: 8524649871967949622}
+  - component: {fileID: 742561697025398275}
   m_Layer: 5
   m_Name: SaveButton
   m_TagString: Untagged
@@ -237,9 +238,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5264788389006140233}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: LoadMenu
+      - m_Target: {fileID: 742561697025398275}
+        m_TargetAssemblyTypeName: SaveData, Assembly-CSharp
+        m_MethodName: SaveToJson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -249,6 +250,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &742561697025398275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662815880830224816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa2c433f4b17c7d1b89e063a97bb0ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player:
+    level: 0
 --- !u!1 &8383569622205088151
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,7 +640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5037753619813845225, guid: c31abb7a1e5c0a26bbd14e923a2b3961, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c31abb7a1e5c0a26bbd14e923a2b3961, type: 3}

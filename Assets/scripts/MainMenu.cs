@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.IO;
 using TMPro;
 
 public class MainMenu : MonoBehaviour
@@ -10,6 +11,7 @@ public class MainMenu : MonoBehaviour
     public int startScene;
     public TMP_InputField userInput;
     public Button loadButton;
+    private string filePath;
 
     private string username;
 
@@ -37,7 +39,10 @@ public class MainMenu : MonoBehaviour
 
     public void SetLoadButton()
     {
-        if (SaveSystem.Exists())
+        filePath = Application.persistentDataPath + "/PlayerData.json";
+        Debug.Log(filePath);
+
+        if (File.Exists(filePath))
         {
             Debug.Log("Exists");
             loadButton.enabled = true;
@@ -46,6 +51,11 @@ public class MainMenu : MonoBehaviour
             Debug.Log("Doesn't exist");
             loadButton.enabled = false;
         }
+    }
+
+    public void LoadGame()
+    {
+        SaveData.LoadJson(filePath);
     }
         
 }

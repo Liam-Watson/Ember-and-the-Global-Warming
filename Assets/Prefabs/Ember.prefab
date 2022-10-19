@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 772404184403053334}
   - component: {fileID: -5392313277110391599}
   - component: {fileID: 2399331156400793639}
-  - component: {fileID: 1393390585398317638}
   m_Layer: 0
   m_Name: Ember
   m_TagString: Player
@@ -305,20 +304,6 @@ MonoBehaviour:
   ps: {fileID: 9194623876086079798, guid: 9dc44e2f119711d4d94cdf0f4e3c1d24, type: 3}
   soundEffect: {fileID: 4157312709660282176, guid: b83c34d6fc9a9b98b881b6f07d69e8df, type: 3}
   selfDamage: 30
---- !u!114 &1393390585398317638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255965233551953229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b992208517b7526b180eb296a7a35d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 0
-  playerName: 
 --- !u!1 &4545543361864427707
 GameObject:
   m_ObjectHideFlags: 0
