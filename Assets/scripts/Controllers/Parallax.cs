@@ -8,24 +8,29 @@ public class Parallax : MonoBehaviour
     private float length, startpos, y , z;
     public GameObject cam;
     public float parallaxScale;
+    public bool shift = false;
     // Start is called before the first frame update
     void Start()
     {
         startpos = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+        length = GetComponent<SpriteRenderer>().size.x;
+        
         y = transform.position.y;
         z = transform.position.z;
 
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         float temp = (cam.transform.position.x * (1 - parallaxScale));
         float distance = (cam.transform.position.x * parallaxScale);
-        transform.position = new Vector3(startpos+ distance, y, z);
+        transform.position = new Vector3(startpos + distance, y, z);
 
-        if(temp > startpos + length) startpos += length;
-        else if(temp < startpos - length) startpos -= length;
+        if(shift){
+            if(temp >= startpos + (length)) startpos += (length);
+            else if(temp < startpos - (length)) startpos -= (length);
+        }
+        
     }
 }
