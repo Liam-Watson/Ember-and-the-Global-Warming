@@ -195,6 +195,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   heatBar: {fileID: 1249752011807200307, guid: b36826ac82cb465e4887fb73bc37d635, type: 3}
+  emberDamageSF: {fileID: 5265665566831052973, guid: 31a9082bf4eae3ab8b9d2cb697685bef, type: 3}
 --- !u!114 &4352818878065924332
 MonoBehaviour:
   m_ObjectHideFlags: 0

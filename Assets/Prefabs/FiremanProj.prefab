@@ -150,3 +150,4 @@ MonoBehaviour:
   ps: {fileID: 5170922063188218397, guid: 790a6f20d85aa4f8696e7005ec3f6fad, type: 3}
   damage: 30
   foamSoundEffect: {fileID: 7114988199277659487, guid: 53d879c541138f19882e947090b90e1b, type: 3}
+  emberDamageSF: {fileID: 5265665566831052973, guid: 31a9082bf4eae3ab8b9d2cb697685bef, type: 3}

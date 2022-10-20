@@ -12,6 +12,8 @@ public class EmberGeneral : MonoBehaviour
 
     private GameObject ember;
 
+
+
     // Start is called before the first frame update
     void Start()
     {

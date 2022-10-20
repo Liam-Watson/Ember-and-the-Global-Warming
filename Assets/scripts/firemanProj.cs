@@ -14,6 +14,8 @@ public class firemanProj : MonoBehaviour
 
     public GameObject foamSoundEffect;
 
+    public GameObject emberDamageSF;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,8 @@ public class firemanProj : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Instantiate(emberDamageSF, transform.position, Quaternion.identity);
+            emberDamageSF.GetComponent<AudioSource>().Play();
             DestroyProj();
         }
     }
@@ -48,6 +52,8 @@ public class firemanProj : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             ember.GetComponent<EmberGeneral>().TakeDamage(damage);
+            Instantiate(emberDamageSF, transform.position, Quaternion.identity);
+            emberDamageSF.GetComponent<AudioSource>().Play();
             DestroyProj();
         }
         

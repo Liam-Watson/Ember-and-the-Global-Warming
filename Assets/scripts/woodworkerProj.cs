@@ -12,6 +12,8 @@ public class woodworkerProj : MonoBehaviour
 
     public GameObject waterAttackSound;
     public float damage;
+
+    public GameObject emberDamageSF;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,8 @@ public class woodworkerProj : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Instantiate(emberDamageSF, transform.position, Quaternion.identity);
+            emberDamageSF.GetComponent<AudioSource>().Play();
             DestroyProj();
         }
     }
@@ -47,6 +51,8 @@ public class woodworkerProj : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             ember.GetComponent<EmberGeneral>().TakeDamage(damage);
+            Instantiate(emberDamageSF, transform.position, Quaternion.identity);
+            emberDamageSF.GetComponent<AudioSource>().Play();
             DestroyProj();
         }
         

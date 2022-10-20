@@ -150,3 +150,4 @@ MonoBehaviour:
   ps: {fileID: 5170922063188218397, guid: 2ce248e5667b64b528203483323d66b2, type: 3}
   damage: 10
   grassSlingSF: {fileID: 7118880469508959456, guid: 68201eef19beb076c808c6c9c7f5ecf8, type: 3}
+  emberDamageSF: {fileID: 5265665566831052973, guid: 31a9082bf4eae3ab8b9d2cb697685bef, type: 3}
