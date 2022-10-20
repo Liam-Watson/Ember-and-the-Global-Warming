@@ -7,6 +7,7 @@ TagManager:
   - block
   - heatwave
   - enemy
+  - boundary
   layers:
   - Default
   - TransparentFX
