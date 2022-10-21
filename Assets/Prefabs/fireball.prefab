@@ -129,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   Ember: {fileID: 1255965233551953229, guid: 5a645972e71e570eb98902aa1b101594, type: 3}
-  healthGainOnKill: 10
+  healthGainOnKill: 20
 --- !u!50 &2024832281131543936
 Rigidbody2D:
   serializedVersion: 4

@@ -14,7 +14,6 @@ public class grasslander : MonoBehaviour
     private Vector3 currentPos;
     private GameObject grassBlade;
     private float shotTime;
-    private bool hit;
 
     public float healthGainOnKill;
 
@@ -24,7 +23,6 @@ public class grasslander : MonoBehaviour
         ember = GameObject.Find("Ember");
         currentPos = transform.position;
         shotTime = fireRate;
-        hit = false;
     }
 
     // Update is called once per frame
@@ -52,9 +50,10 @@ public class grasslander : MonoBehaviour
         if(other.gameObject.tag == "heatwave"){
             animator.SetBool("isDead", true);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
-            Destroy(gameObject, 1.1f);
-            ember.GetComponent<EmberGeneral>().TakeDamage(-1*healthGainOnKill);
             gameObject.GetComponent<grasslander>().enabled = false;
+            //Destroy(gameObject, 1.1f);
+            Destroy(gameObject);
+            ember.GetComponent<EmberGeneral>().TakeDamage(-1*healthGainOnKill);
         }
     }
 }

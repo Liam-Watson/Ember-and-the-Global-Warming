@@ -7,7 +7,7 @@ public class fireball : MonoBehaviour
     public float speed = 20;
     private Rigidbody2D rb;
     private Vector3 worldPositionMouse;
-    public GameObject Ember;
+    public GameObject Ember ;
 
     public float healthGainOnKill;
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class fireball : MonoBehaviour
         // mousePos.z = Camera.main.nearClipPlane;
         // worldPositionMouse = Camera.main.ScreenToWorldPoint(mousePos);
         rb = GetComponent<Rigidbody2D>();
-        // Ember = GameObject.Find("Ember");
+        Ember = GameObject.Find("Ember");
         var ePosX = Ember.GetComponent<Rigidbody2D>().position.x;
         var ePosY = Ember.GetComponent<Rigidbody2D>().position.y;
         // var ePos3D = new Vector3(ePosX, ePosY, 0); 
