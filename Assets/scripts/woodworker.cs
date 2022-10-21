@@ -34,7 +34,7 @@ public class woodworker : MonoBehaviour
         Vector2 emb = new Vector2(emberX, emberY);
         float dist = Vector2.Distance(emb, grass);
 
-        if (shotTime <= 0 && dist <= range)
+        if (shotTime <= 0 && dist <= range  && animator.GetBool("isDead") == false)
         {
             woodworkerProj = Instantiate(proj, spawnPos, Quaternion.identity);
             shotTime = fireRate;

@@ -35,7 +35,7 @@ public class fireman : MonoBehaviour
         Vector2 emb = new Vector2(emberX, emberY);
         float dist = Vector2.Distance(emb, fireman);
 
-        if (shotTime <= 0 && dist <= range)
+        if (shotTime <= 0 && dist <= range  && animator.GetBool("isDead") == false)
         {
             firemanProj = Instantiate(proj, spawnPos, Quaternion.identity);
             shotTime = fireRate;
