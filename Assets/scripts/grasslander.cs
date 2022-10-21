@@ -54,6 +54,7 @@ public class grasslander : MonoBehaviour
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
             Destroy(gameObject, 1.1f);
             ember.GetComponent<EmberGeneral>().TakeDamage(-1*healthGainOnKill);
+            gameObject.GetComponent<grasslander>().enabled = false;
         }
     }
 }
