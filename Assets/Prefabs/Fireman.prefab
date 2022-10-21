@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   proj: {fileID: 5906808406061472749, guid: 874fc29ab80ecbd4d83483d56a38d123, type: 3}
-  range: 30
+  range: 50
   fireRate: 2
   animator: {fileID: 2324632330994651979}
-  healthGainOnKill: 10
+  healthGainOnKill: 20
