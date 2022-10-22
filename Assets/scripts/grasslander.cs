@@ -16,6 +16,7 @@ public class grasslander : MonoBehaviour
     private GameObject grassBlade;
     private float shotTime;
 
+    public bool isDead;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,8 +35,7 @@ public class grasslander : MonoBehaviour
         Vector2 emb = new Vector2(emberX, emberY);
         float dist = Vector2.Distance(emb, grass);
 
-        // Checking whether ember is in range and enough time has passed
-        if (shotTime <= 0 && dist <= range)
+        if (shotTime <= 0 && dist <= range && !isDead && animator.GetBool("isDead") == false)
         {
             grassBlade = Instantiate(blade, currentPos, Quaternion.identity);
             shotTime = fireRate;
