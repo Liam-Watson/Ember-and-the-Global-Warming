@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Creates Ember's heatwave abililty
 public class HeatWave : MonoBehaviour
 {
     // Start is called before the first frame update

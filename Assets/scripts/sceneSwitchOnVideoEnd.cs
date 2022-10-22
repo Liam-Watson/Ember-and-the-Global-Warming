@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
+// Transitions from the a cutscene to the next level
 public class sceneSwitchOnVideoEnd : MonoBehaviour
 {
     // Start is called before the first frame update

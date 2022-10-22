@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Sets the behaviour of the Fireman's projectile
 public class firemanProj : MonoBehaviour
 {
     public float speed;
@@ -26,10 +27,11 @@ public class firemanProj : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Performs a transform from the spawning point to embers current position at a certain speed
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
-
         if (transform.position.x == target.x && transform.position.y == target.y)
         {
+            // Destroys the gameObject this script is attached to once it reaches its destination
             DestroyProj();
         }
 
@@ -37,6 +39,7 @@ public class firemanProj : MonoBehaviour
         ps.GetComponent<ParticleSystem>().Play();
     }
     
+    // Checks whether it collides with Ember, plays sound effects if it does
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -64,6 +67,7 @@ public class firemanProj : MonoBehaviour
         Destroy(gameObject);
     }
 
+    // Plays certain sound effects when awake
     private void Awake() {
         Instantiate(foamSoundEffect, transform.position, Quaternion.identity);
         foamSoundEffect.GetComponent<AudioSource>().Play();

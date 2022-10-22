@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Displays the tutorial for each level for 4 seconds
 public class ToggleControlls : MonoBehaviour
 {
     public GameObject tutorialOverlay;

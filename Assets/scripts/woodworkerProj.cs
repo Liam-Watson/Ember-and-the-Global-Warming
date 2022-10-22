@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Sets the behaviour of the Woodworker's projectile
 public class woodworkerProj : MonoBehaviour
 {
     public float speed;
@@ -24,10 +25,11 @@ public class woodworkerProj : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Performs a transform from the spawning point to embers current position at a certain speed
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
-
         if (transform.position.x == target.x && transform.position.y == target.y)
         {
+            // Destroys the gameObject this script is attached to once it reaches its destination
             DestroyProj();
         }
 
@@ -36,6 +38,7 @@ public class woodworkerProj : MonoBehaviour
         
     }
     
+    // Checks whether it collides with Ember, plays sound effects if it does
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -62,6 +65,8 @@ public class woodworkerProj : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    // Plays certain sound effects when awake
     private void Awake() {
         Instantiate(waterAttackSound, transform.position, Quaternion.identity);
         waterAttackSound.GetComponent<AudioSource>().Play();

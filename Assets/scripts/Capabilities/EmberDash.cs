@@ -2,23 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Creates Embers dash ability
 public class EmberDash : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float dashSpeed;
-    private float dashTime;
     public float startDashTime;
-    private int direction;
-
+    public float enemyKillHealthGain;
     public float selfDamage = 10f;
-
     public GameObject ps;
-
-    private float gravityScale;
-
     public GameObject soundEffect;
 
-    public float enemyKillHealthGain;
+    private int direction;
+    private float gravityScale;
+    private float dashTime;
+
     // Start is called before the first frame update
     void Start()
     {

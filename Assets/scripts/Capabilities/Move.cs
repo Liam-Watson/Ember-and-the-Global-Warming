@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Shinjingi
 {
+    // Controls Ember's movement physics
     [RequireComponent(typeof(Controller))]
     public class Move : MonoBehaviour
     {

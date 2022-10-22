@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Shinjingi
 {
+    // Checks whether a gameObject is on the ground or not
     public class Ground : MonoBehaviour
     {
         public bool OnGround { get; private set; }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Controls Ember's heat bar
 public class EmberGeneral : MonoBehaviour
 {
     public float maxHealth = 100f;
@@ -47,15 +48,10 @@ public class EmberGeneral : MonoBehaviour
         
         if (currentHealth <= 0){
             GameObject ember = GameObject.Find("Ember");
-            
             animator.SetBool("isDead", true);
-            // Destroy(ember, 1.3f);
             StartCoroutine(MovePlayerAfterDeath());
-            
-            // Destroy(gameObject);
-            // Destroy(GameObject.Find("Ember"));
         }
-        // Debug.Log(currentHealth);
+
         heatBar.SetHealth(currentHealth);
     }
 

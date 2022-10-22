@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
+// Manages Ember's health bar
 public class EmberHeat : MonoBehaviour
 {
     public Slider slider;

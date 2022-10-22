@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Controls the volume thats set in the options menu screen
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;

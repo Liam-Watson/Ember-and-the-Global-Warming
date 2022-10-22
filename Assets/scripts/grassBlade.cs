@@ -2,20 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Sets the behaviour of the Grasslander's projectile
 public class grassBlade : MonoBehaviour
 {
     public float speed;
     public GameObject ps;
+    public float damage;
+    public GameObject grassSlingSF;
+    public GameObject emberDamageSF;
 
     private Transform ember;
     private Vector2 target;
     private Vector3 psPos;
-
-    public float damage;
-
-    public GameObject grassSlingSF;
-
-    public GameObject emberDamageSF;
 
     // Start is called before the first frame update
     void Start()
@@ -27,16 +25,19 @@ public class grassBlade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Performs a transform from the spawning point to embers current position at a certain speed
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
         if (transform.position.x == target.x && transform.position.y == target.y)
         {
+            // Destroys the gameObject this script is attached to once it reaches its destination
             DestroyBlade();
         }
 
         Instantiate(ps, transform.position, Quaternion.identity);
         ps.GetComponent<ParticleSystem>().Play();
     }
-    
+
+    // Checks whether it collides with Ember, plays sound effects if it does
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -66,6 +67,7 @@ public class grassBlade : MonoBehaviour
         Destroy(gameObject);
     }
 
+    // Plays certain sound effects when awake
     private void Awake() {
         Instantiate(grassSlingSF, transform.position, Quaternion.identity);
         grassSlingSF.GetComponent<AudioSource>().Play();

@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.IO;
 using UnityEngine.SceneManagement;
 
+// Saves the current game data to a Json file, all thats stored is the scene number the player was on.
 public class SaveData : MonoBehaviour
 {
     public static Player player;

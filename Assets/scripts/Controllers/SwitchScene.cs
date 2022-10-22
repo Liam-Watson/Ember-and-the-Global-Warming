@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Switches scene to the scene number specified
 public class SwitchScene : MonoBehaviour
 {
     public int sceneToSwitchTo;

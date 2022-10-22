@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Controls the behaviour of Ember's particles
 public class emberParticleMovement : MonoBehaviour
 {
+    public float moveSpeed;
+
     private Transform playerPos;
     private Transform pos;
-    public float moveSpeed;
     private ParticleSystem ps;
     private GameObject Ember;
+
     // Start is called before the first frame update
     void Start()
     {

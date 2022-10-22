@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Controls the behaviour of the buttons in the pause menu
 public class PauseMenu : MonoBehaviour
 {
     public static bool gameIsPaused = false;
-
-
     public GameObject pauseMenuUI;
 
     private void Start() {

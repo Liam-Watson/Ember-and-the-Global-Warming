@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Creates a parallax effect for Ember's special abilities
 public class Parallax : MonoBehaviour
 {
-
-    private float length, startpos, y , z;
     public GameObject cam;
     public float parallaxScale;
     public bool shift = false;
+
+    private float length, startpos, y , z;
+
     // Start is called before the first frame update
     void Start()
     {

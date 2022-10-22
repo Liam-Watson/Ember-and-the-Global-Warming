@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Shinjingi
 {
+    // Controls Ember's jumping physics
     [RequireComponent(typeof(Controller))]
     public class Jump : MonoBehaviour
     {

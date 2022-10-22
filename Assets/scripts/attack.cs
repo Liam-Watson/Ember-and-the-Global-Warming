@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Ember's main attack which shots in direction of the cursor
 public class attack : MonoBehaviour
 {
     public Transform projPos;
     public GameObject fireball;
-    private Vector3 worldPositionMouse;
-    private  GameObject fireballObj;
     public float selfDamage;
     public EmberGeneral ember;
-
     public GameObject soundEffect;
+
+    private Vector3 worldPositionMouse;
+    private  GameObject fireballObj;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,13 +25,14 @@ public class attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //get input from player
+        // Get input from player
         if (Input.GetMouseButtonDown(0) && !PauseMenu.gameIsPaused)
         {
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = Camera.main.nearClipPlane;
             worldPositionMouse = Camera.main.ScreenToWorldPoint(mousePos);
-            //get character position
+            
+            // Get character position
             Vector3 charPos = transform.position;
             
             if (worldPositionMouse.x < charPos.x){
